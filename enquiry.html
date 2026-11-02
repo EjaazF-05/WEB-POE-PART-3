@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about joining Cape Town Football Academy training programmes.">
+    <title>Enquiry | Cape Town Football Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cape Town Football Academy</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Player Enquiry Form</h2>
+            <p>Complete the form below if you would like to join Cape Town Football Academy.</p>
+
+            <form id="enquiryForm" novalidate>
+                <label for="playerName">Player Name:</label>
+                <input type="text" id="playerName" name="playerName" required>
+                <span class="error" id="nameError"></span>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="6" max="18" required>
+                <span class="error" id="ageError"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+                <label for="programme">Training Programme:</label>
+                <select id="programme" name="programme" required>
+                    <option value="">-- Select a programme --</option>
+                    <option value="1-on-1">1-on-1 Training</option>
+                    <option value="weekly">Weekly Team Training</option>
+                    <option value="holiday">Holiday Clinic</option>
+                </select>
+                <span class="error" id="programmeError"></span>
+
+                <label for="reason">Why do you want to join?</label>
+                <textarea id="reason" name="reason" rows="5" required></textarea>
+                <span class="error" id="reasonError"></span>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cape Town Football Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

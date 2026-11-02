@@ -1,0 +1,244 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+/* HEADER */
+header {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION - Flexbox */
+nav {
+    background-color: #222222;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444444;
+    color: #4da6ff;
+}
+
+nav a:focus {
+    outline: 2px solid #4da6ff;
+    background-color: #444444;
+}
+
+nav a:active {
+    background-color: #111111;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    color: #0066cc;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #222222;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* FORMS */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #0066cc;
+    border-color: #0066cc;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+button:focus {
+    outline: 2px solid #4da6ff;
+}
+
+button:active {
+    background-color: #003366;
+}
+
+.error {
+    color: #cc0000;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#formMessage,
+#contactMessage {
+    margin-top: 15px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* ACCORDION */
+.accordion-btn {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    background-color: #0066cc;
+    color: white;
+    padding: 14px 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.accordion-btn:hover {
+    background-color: #004d99;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 5px;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    input, textarea, select {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        width: 90%;
+    }
+}
